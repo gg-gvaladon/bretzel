@@ -9,4 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print environment variables
+        env:
+          MY_ENV: ${{ vars.MY_ENV }}
+          MY_SECRET: ${{ secrets.MY_SECRET }}
         run: printenv
