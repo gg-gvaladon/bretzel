@@ -7,7 +7,7 @@ on:
 jobs:
   printenv:
     runs-on: ubuntu-latest
-    environment: TEST_ENV
+    #environment: TEST_ENV
     steps:
       - name: Print environment variables
         env:
