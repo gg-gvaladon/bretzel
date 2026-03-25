@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     #environment: TEST_ENV
     steps:
-      - name: Print environment variables
+      - name: Print environment variables - env section
         env:
           MY_ENV: ${{ vars.MY_ENV }}
           MY_SECRET: ${{ secrets.MY_SECRET }}
           REPO_ENV: ${{ vars.REPO_ENV }}
           REPO_MY_SECRET: ${{ secrets.REPO_MY_SECRET }}
         run: printenv
+      - name: Print environment variables
+        run: printenv
+
